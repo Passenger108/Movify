@@ -7,7 +7,7 @@ export default function SearchMovies() {
 
 
     const [query, setQuery] = React.useState("");
-    const [movies, setMovies] = React.useState([]);
+    const [movies, setMovies] = React.useState(null);
     const [loading, setLoading] = React.useState(false);
 
 
@@ -77,13 +77,13 @@ export default function SearchMovies() {
             )}
 
             <div className="card-list">
-                {movies.filter(movie => movie.poster_path).map(movie => (
+                {movies?.filter(movie => movie?.poster_path).map(movie => (
                     <MovieCard
                         key={movie.id}
                         movie={movie}
                     />
                 ))}
-                {movies.length === 0 && <NoResultsFound />}
+                {movies !== null && <NoResultsFound />}
             </div>
         </>
     )
