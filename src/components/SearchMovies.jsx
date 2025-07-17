@@ -83,7 +83,7 @@ export default function SearchMovies() {
                         movie={movie}
                     />
                 ))}
-                {movies !== null && <NoResultsFound />}
+                {movies !== null && movies.length==0 && <NoResultsFound />}
             </div>
         </>
     )
