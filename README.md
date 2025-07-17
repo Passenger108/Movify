@@ -4,6 +4,11 @@ Movify is a modern and responsive movie search app built with **React** using th
 
 ---
 
+## 🌐 Demo
+
+Check out the live demo on Netlify:  
+[https://movifynitin.netlify.app/](https://movifynitin.netlify.app/)
+
 ## 🚀 Features
 
 ### 🔍 Search Functionality
